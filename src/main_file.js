@@ -33,11 +33,21 @@ import vector4 from "./svg/vector4.svg";
 import videofalse from "./svg/videofalse.svg";
 import videotrue from "./svg/videotrue.svg";
 
-export const Main_File = () => {
+export const Main_File = (props) => {
+  const ref = useRef();
+  const [isVisible, setIsVisible] = useState(false);
+  const handleOutClick = () =>{
+    console.log(isVisible);
+    setIsVisible(!isVisible);
+  }
+
+  useOutsideClick(ref, () => {
+    setIsVisible(!isVisible);
+  });
   const [isActive, setIsActive] = useState(0);
   const handleChange = () => {
   	console.log(isActive);
-  	if (isActive < 2) {
+  	if (isActive < 6) {
   		setIsActive(isActive+1)
   	} else {
   			setIsActive(0)
@@ -47,31 +57,38 @@ export const Main_File = () => {
   <div>
   <div class="header1 head-height navbar-dark sticky-top">
   		<div class="center width11" >
-  			<a href="#" class="navbar-brand"><h2>КурсМейкер</h2></a>
+  			<a onClick = {props.handleClick} href="#" class="navbar-brand"><h2>КурсМейкер</h2></a>
   		</div>
   		<div class="width111" >
   			<div class="otstyp"></div>
-  			<a href="#"><img class="cube1" src={videotrue}/></a>
-  			<a href="#"><img class="cube1" src={texttrue}/></a>
-  			<a href="#"><img class="cube1" src={testtrue}/></a>
+  			<a href="#"><img class="cube1" src={videofalse}/></a>
+  			<a href="#"><img class="cube1" src={textfalse}/></a>
+  			<a href="#"><img class="cube1" src={testfalse}/></a>
   			<a href="#"><img class="cube1" src={videofalse}/></a>
   			<a href="#"><img class="cube1" src={textfalse}/></a>
   			<a href="#"><img class="cube1" src={testfalse}/></a>
 
 
-  			<a href="#"><img class="cube-avatar" src={maskGroup}/></a>
+  			{
+          !isVisible && (
+          <div onClick = {handleOutClick}>
+            <a href="#"><img class="cube-avatar" src={maskGroup}/> </a>
+          </div>
+          )
+        }
 
   	</div>
   </div>
   <hr/>
 
-
-  <div class="pop_up_window">
-  		<a class="black1" href="#">Профиль</a>
-  		<a class="black1" href="#">Настройки</a>
-  		<a class="black1" href="#">Выход</a>
-  </div>
-
+  {
+    isVisible && (
+  <div ref = {ref} class="pop_up_window">
+  		<a class="black1" href="#"><h5>Профиль</h5></a>
+  		<a class="black1" href="#"><h5>Настройки</h5></a>
+  		<a class="black1" href="#"><h5>Выход</h5></a>
+  </div>)
+  }
   <div class="all_width1">
   	<div class="row">
   		<div class="col-lg-3 col-md-3 course_navigation">
@@ -125,7 +142,7 @@ export const Main_File = () => {
   	<div class="dislike_like_button">
   			<img class="dislike_like" src={union} />
   			<img class="dislike_like" src={dislike1} />
-  			<div class="button center">
+  			<div onClick = {handleChange} class="button center">
         Следующий шаг
   			   </div>
   		    </div>

@@ -22,7 +22,7 @@ function App() {
 
       }
       { !isListActive && (
-        <Main_File/>
+        <Main_File handleClick = {handleClick}/>
       )
 
       }

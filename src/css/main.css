@@ -107,7 +107,7 @@ hr{
 	width: 66%;
 }
 
-@media (max-device-width: 767px)
+@media (max-width: 767px)
 {
 	.course_navigation{
 		display: none;
@@ -159,11 +159,11 @@ hr{
 .pop_up_window{
 	position: absolute;
 	position: fixed;
-	display: none;
+	display: flex;
 	flex-direction: column;
 
-	top: 13px;
-	right: 10px;
+	top: 0px;
+	right: 0px;
 	background-color: rgba(213, 213, 234, 1);
 	z-index: 10000!important;
 	min-height: 50px;
