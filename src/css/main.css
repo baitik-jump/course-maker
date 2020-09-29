@@ -1,21 +1,30 @@
 html, body{
 	width: 100%;
 }
-.header{
+.header1{
 	color: white;
 	width: 100%;
 	display: flex;
-	background-color: #171717;
+	background: #1D1515;
 }
-.cube{
+.cube1{
 
 	height: 36px; width: 36px; background-color: #35b34a; float: left;
 	margin-left: 1em; margin-top: 17px; border-radius: 6px;
 
 }
+.width11{
+	width: 30%;
+	height: 100%;
+}
+.width111{
+		width: 75%;
+	height: 100%;
+}
 .navbar-brand{
 display: flex;
 justify-content: center;
+align-items: center;
 }
 
 .otstyp{
@@ -43,13 +52,13 @@ justify-content: center;
 
 .course_navigation{
 	height: 557px;
-	background-color: #171717;
+	background: #1D1515;
 	width: 100%;
 	float: left;
 	min-height: 600px;
 	position: fixed;
 }
-.all_width{
+.all_width1{
 	width: 100%;
 	height: 100%;
 }
@@ -58,7 +67,7 @@ justify-content: center;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	height: 9%;
+	height: 40px;
 }
 
 .course_name{
@@ -78,10 +87,6 @@ justify-content: center;
 	background-color: white;
 
 }
-h6{
-	padding-left: 20px;
-}
-
 hr{
 	margin-bottom: 0px;
 	margin-top: 0px;
@@ -101,10 +106,8 @@ hr{
 	margin-left: 28%;
 	width: 66%;
 }
-.active-button{
-	background-color: black !important;
-}
-@media (max-width: 767px)
+
+@media (max-device-width: 767px)
 {
 	.course_navigation{
 		display: none;
@@ -133,9 +136,11 @@ hr{
 .like{
 	float: left;
 }
-.dislike{
-	padding-left: 2%;
+.dislike_like{
+	padding-left: 3%;
 	float: left;
+	width: 70px;
+	height: 45px;
 
 }
 .green{
@@ -154,27 +159,50 @@ hr{
 .pop_up_window{
 	position: absolute;
 	position: fixed;
+	display: none;
+	flex-direction: column;
+
 	top: 13px;
-	right: 23px;
-	background-color: red;
+	right: 10px;
+	background-color: rgba(213, 213, 234, 1);
 	z-index: 10000!important;
 	min-height: 50px;
 	min-width: 50px;
 	max-width: 170px;
 }
-.lesons{
+.black1{
+	color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-right: 10px;
+	padding-left:10px;
+}
+.black1:hover{
+	color: black;
+	text-decoration: none;
+}
+.lesons1{
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	height: 430px;
-	overflow: auto; /* Добавляем полосы прокрутки */
-	padding: 5px; /* Поля вокруг текста */
-	border: solid 1px #171717; /* Параметры рамки */
+	justify-content: flex-start;
+
+height: 430px;
+overflow: auto; /* Добавляем полосы прокрутки */
+padding: 5px; /* Поля вокруг текста */
+border: solid 1px #171717; /* Параметры рамки */
 
 }
-.leson{
+.leson1{
 	min-width: 100%;
+	min-height: 10%;
 	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.w{
+	font-weight: 600;
 }
 a{
 	text-decoration: none;
@@ -184,16 +212,31 @@ a:hover{
 	text-decoration: underline;
 	color: white;
 }
-.lesons::-webkit-scrollbar {
+.lesons1::-webkit-scrollbar {
     width: 6px;
 }
 
-.lesons::-webkit-scrollbar-track {
+.lesons1::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,.10);
     border-radius: 10px;
 }
 
-.lesons::-webkit-scrollbar-thumb {
+.lesons1::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255.10);
+}
+.information_step{
+	padding-left: 15px;
+}
+.information_bal{
+	padding-left: 15px;
+}
+@media(max-width: 640px)
+{
+	.cube1{
+		display: none;
+	}
+	.width11{
+		width: 100%;
+	}
 }

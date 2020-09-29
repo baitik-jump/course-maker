@@ -3,47 +3,28 @@ import '../css/main.css';
 import {useOutsideClick} from '../hooks/useOutsideClick';
 
 export const Head = (props) =>{
-  const ref = useRef();
-  const [isVisible, setIsVisible] = useState(false);
-  const handleClick = () =>{
-    console.log(isVisible);
-    setIsVisible(!isVisible);
-  }
-
-  useOutsideClick(ref, () => {
-    setIsVisible(!isVisible);
-  });
-  return(
+  return (
     <div>
       <div class="header head-height navbar-dark sticky-top">
-      	<div class="row">
-      		<div class="col-lg-3 col-md-3 col-xs-3 center" >
-      			<div onClick = {props.handleListClick} class="navbar-brand"><h2>КурсМейкер</h2><div/>
-      		</div>
-      		<div class="col-lg-9 col-md-9 col-xs-9" >
-      			<div class="otstyp"></div>
-            <a href="#" className={`cube ${props.isActive === 0 ? 'active-button' : ''}`}></a>
-            <a href="#" className={`cube ${props.isActive === 1 ? 'active-button' : ''}`}></a>
-            <a href="#" className={`cube ${props.isActive === 2 ? 'active-button' : ''}`}></a>
-
-            {
-              !isVisible && (
-                <div onClick = {props.handleClick}><div class="cube-avatar"></div></div>
-              )
-            }
+          <div class="center width" >
+            <a href="#" class="navbar-brand"><h2>КурсМейкер</h2></a>
+          </div>
+          <div class="width1" >
+            <div class="otstyp"></div>
+            <a href="#"><img class="cube" src="svg/videotrue.svg"/></a>
+            <a href="#"><img class="cube" src="svg/texttrue.svg"/></a>
+            <a href="#"><img class="cube" src="svg/testtrue.svg"/></a>
+            <a href="#"><img class="cube" src="svg/videofalse.svg"/></a>
+            <a href="#"><img class="cube" src="svg/textfalse.svg"/></a>
+            <a href="#"><img class="cube" src="svg/testfalse.svg"/></a>
 
 
-            {
-                isVisible && (
-                  <div ref={ref}>
-                      <div class="pop_up_window" />
-                  </div>
-                )
-                }
-      			</div>
-      		</div>
-      	</div>
+            <a href="#"><img class="cube-avatar" src="svg/MaskGroup.png"/></a>
+
+        </div>
       </div>
+      <hr/>
     </div>
   )
+
 }
