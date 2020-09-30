@@ -61,9 +61,9 @@ export const Main_File = (props) => {
   		</div>
   		<div class="width111" >
   			<div class="otstyp"></div>
-  			<a href="#"><img class="cube1" src={videofalse}/></a>
-  			<a href="#"><img class="cube1" src={textfalse}/></a>
-  			<a href="#"><img class="cube1" src={testfalse}/></a>
+  			<a href="#"><img class="cube1" src={videotrue}/></a>
+  			<a href="#"><img class="cube1" src={texttrue}/></a>
+  			<a href="#"><img class="cube1" src={testtrue}/></a>
   			<a href="#"><img class="cube1" src={videofalse}/></a>
   			<a href="#"><img class="cube1" src={textfalse}/></a>
   			<a href="#"><img class="cube1" src={testfalse}/></a>
@@ -93,35 +93,35 @@ export const Main_File = (props) => {
   	<div class="row">
   		<div class="col-lg-3 col-md-3 course_navigation">
   			<div class="course_block">
-  				<a href="#" class="course_name"> <h4>Урок по информатике С++</h4></a>
-  				<p class="progre">Прогресс по курсу : 101/102</p>
+  				<a href="#" class="course_name h"> <h4>Разговорный Испанский</h4></a>
+  				<p class="progre">Прогресс по курсу : 10/12</p>
   			</div>
   			<hr class="hr_navigation"/>
   				<div class="lesons1">
-  					<a href="#" class="leson1"><h6 class="w">1.1 Вводное занятие</h6></a>
+  					<a href="#" class="leson1 h"><h6 class="w">1.1 Вводное занятие</h6></a>
   					<hr class="hr_navigation" />
-  					<a href="#" class="leson1"><h6 class="w">1.2 Знакомство со средой разработки</h6></a>
+  					<a href="#" class="leson1 h"><h6 class="w">1.2 Простейшее предложения</h6></a>
   					<hr class="hr_navigation" />
-  					<a href="#" class="leson1"><h6 class="w">1.3 Целые числа</h6></a>
+  					<a href="#" class="leson1 h"><h6 class="w">1.3 Разбираем алфавит</h6></a>
   					<hr class="hr_navigation" />
-  					<a href="#" class="leson1"><h6 class="w">1.4 Условный оператор</h6></a>
+  					<a href="#" class="leson1 h"><h6 class="w">1.4 Числа</h6></a>
   					<hr class="hr_navigation" />
-  					<a href="#" class="leson1"><h6 class="w">1.5 Цикл while</h6></a>
+  					<a href="#" class="leson1 h"><h6 class="w">1.5 Разговорный 1</h6></a>
   					<hr class="hr_navigation" />
-  					<a href="#" class="leson1"><h6 class="w">1.6 Действительные числа</h6></a>
+  					<a href="#" class="leson1 h"><h6 class="w">1.6 Разговорный 2</h6></a>
   					<hr class="hr_navigation" />
-  					<a href="#" class="leson1"><h6 class="w">1.7 Цикл for и массивы</h6></a>
+  					<a href="#" class="leson1 h"><h6 class="w">1.7 Повторение пройденного</h6></a>
   					<hr class="hr_navigation" />
-  					<a href="#" class="leson1"><h6 class="w">1.8 Двумерные массивы</h6></a>
+  					<a href="#" class="leson1 h"><h6 class="w">1.8 Сложные предложения</h6></a>
   					<hr class="hr_navigation" />
-  					<a href="#" class="leson1"><h6 class="w">1.9 Функции и рекурсия</h6></a>
+  					<a href="#" class="leson1 h"><h6 class="w">1.9 Разговорный 3</h6></a>
   					<hr class="hr_navigation" />
 
-  					<a href="#" class="leson1"><h6 class="w">1.10 Строки и символы</h6></a>
+  					<a href="#" class="leson1 h"><h6 class="w">1.10 Разговорный 4</h6></a>
   					<hr class="hr_navigation" />
-  					<a href="#" class="leson1"><h6 class="w">1.11 Словари и множества</h6></a>
+  					<a href="#" class="leson1 h"><h6 class="w">1.11 Разговорный 5</h6></a>
   					<hr class="hr_navigation" />
-  					<a href="#" class="leson1"><h6 class="w">1.12 Стандартные алгоритмы STL</h6></a>
+  					<a href="#" class="leson1 h"><h6 class="w">1.12 Подвение итогов</h6></a>
 
 
 

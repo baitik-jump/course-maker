@@ -34,10 +34,10 @@ z-index: 100000;
 
 .up{
 	display: flex;
-	
+
 	flex-direction: column;
 justify-content: center;
-	align-items: center;	
+	align-items: center;
 }
 .all_width{
 	width: 100%;
@@ -53,14 +53,14 @@ justify-content: center;
 		z-index: 100000!important;
 	}
 	.men{
-		margin-top: 100px!important;
+		margin-top: 120px!important;
 	}
 	.header{
 		display: none;
 	}
 }
 .row{
-	width: 100%;	
+	width: 100%;
 }
 .men{
 background: rgba(213, 213, 234, 1);
@@ -121,7 +121,7 @@ p{
 }
 .leson{
 	margin-top: 40px;
-	margin-bottom: 40px; 
+	margin-bottom: 40px;
 }
 .navigat{
 margin-top: 20px;
